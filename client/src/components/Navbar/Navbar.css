@@ -1,0 +1,134 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9f9;
+  padding: 8px 16px;
+  border-bottom: 1px solid #d6d9dc;
+  flex-wrap: wrap;
+}
+
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  flex: 0 0 auto; /* prevent shrinking */
+  gap: 12px;
+}
+
+.nav-logo img {
+  height: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3b4045;
+  font-size: 14px;
+  padding: 6px 10px;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background: #e3e6e8;
+  border-radius: 4px;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: none;
+}
+
+.nav-center {
+  flex: 1 1 400px; /* allow grow and shrink, base 400px */
+  min-width: 200px;
+  max-width: 400px;
+  margin: 0 20px; /* space around search */
+}
+
+.search-form {
+  position: relative;
+  width: 100%; /* fill .nav-center */
+  max-width: 400px;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  padding-right: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  opacity: 0.6;
+}
+
+.nav-right {
+  flex: 0 0 auto; /* prevent shrinking */
+  gap: 10px;
+  display: flex;
+}
+
+.nav-auth-btn {
+  font-size: 13px;
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  color: #0074cc;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-left, .nav-center, .nav-right {
+    justify-content: center;
+    margin: 8px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-center {
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search-form {
+    width: 90%;
+    max-width: none;
+  }
+
+  .nav-right {
+    order: 3;
+  }
+}
+.nav-auth-btn {
+  font-size: 13px;
+  padding: 6px 14px;
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-auth-btn:hover {
+  background-color: #005fa3;
+}

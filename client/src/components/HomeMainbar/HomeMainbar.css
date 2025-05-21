@@ -1,0 +1,132 @@
+.main-bar {
+  width: calc(100% - 324px); /* 300 + 24 padding */
+  float: left;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.main-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows better responsiveness */
+  gap: 10px;
+}
+
+.main-bar-header h1 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.main-bar-header .ask-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #009dff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.main-bar-header .ask-btn:hover {
+  background-color: #007acc;
+}
+
+.display-question-container {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fdf7e2;
+  border-bottom: 1px solid #edeff0;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.display-question-container .display-votes-ans {
+  width: 80px;
+  text-align: center;
+}
+
+.display-question-container .display-votes-ans p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.display-question-details {
+  flex-grow: 1;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.question-title-link {
+  text-decoration: none;
+  color: #037ecb;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.question-title-link:hover {
+  color: #009dff;
+}
+
+.display-tags-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 10px;
+}
+
+.display-tags-time .display-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.display-tags-time .display-tags p {
+  margin: 0;
+  padding: 4px 6px;
+  font-size: 13px;
+  background-color: #edeff0;
+  color: #39739d;
+  border-radius: 3px;
+}
+
+.display-tags-time .display-time {
+  font-size: 13px;
+  color: #6a737c;
+}
+
+@media screen and (max-width: 1020px) {
+  .main-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-bar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .display-question-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .display-question-container .display-votes-ans {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .display-question-details {
+    width: 100%;
+  }
+}
