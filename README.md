@@ -20,10 +20,10 @@ A full-stack Stack Overflow clone built with the MERN stack (MongoDB, Express.js
 ## 🛠️ Tech Stack
 
 **Frontend**:
-- React.js (Vite)
+- React.js 
 - Redux
 - React Router
-- Tailwind CSS / Custom CSS
+
 
 **Backend**:
 - Node.js
@@ -34,5 +34,4 @@ A full-stack Stack Overflow clone built with the MERN stack (MongoDB, Express.js
 
 ---
 
-## 📁 Project Structure
 
